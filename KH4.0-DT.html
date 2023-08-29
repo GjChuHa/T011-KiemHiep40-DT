@@ -14,7 +14,7 @@
 
   <body>
     <!----Trailer-->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="trailer" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 			<div class="modal-dialog modal-xl  modal-dialog-centered">
 			  <div class="modal-content">
 				<div class="modal-body">
@@ -22,8 +22,7 @@
 						<i class="fa fa-times" aria-hidden="true"></i>
 					  </button>
 					  <div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wTcNtgA6gHs"
-			   allowfullscreen></iframe>
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wTcNtgA6gHs" allowfullscreen></iframe>
 					 </div>	    
 				</div>
 			  </div><!-- /.modal-content -->
@@ -164,7 +163,7 @@
 			  </div><!-- /.modal-content -->
 			</div><!-- /.modal-dialog -->
 		</div><!-- /.modal -->
-		  <!---Char Tụ Hiền Trang-->
+		  <!---Char Tàng Kinh Các-->
 
 
     <!----Popup Đăng ký-->
@@ -195,7 +194,7 @@
 		</div><!-- /.modal -->
 
 <!----Popup Chưa có Link button sticky-->
-<div class="modal fade modal-dk" id="chuacolink" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade modal-dksom" id="chuacolink" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-xl modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-body">
@@ -205,7 +204,7 @@
           <h4 class="pt-5 mt-5">Link tải sẽ sớm được cập nhật, Xin chân thành cảm ơn.</h4>
           <a class="btn btn-dangky"  data-bs-dismiss="modal" aria-label="Close">
             <span class="textsub">Quay lại</span>
-            <img src="images/page2/btn-submit.png" alt="">
+            <img src="images/Floatbar/Float-Bar-Popup-Btn-Back.png" alt="">
           </a>
         </div>   
       </div>
@@ -339,6 +338,41 @@
 			</div><!-- /.modal-dialog -->
 		</div><!-- /.modal -->
 
+    <div class="floatbar">
+			<ul class="px-4">
+				<!-- <li><a href="#"><img src="images/btn-naptien.png" alt=""/></a></li> -->
+
+				<li>
+					<a class="store" href="#"  data-bs-toggle="modal" data-bs-target="#chuacolink">
+						<img src="images/FloatBar/Float-Bar-Btn-AppStore.png" alt="" class=""/>
+					</a>
+				</li>
+				<li>
+					<a class="store" href="#"  data-bs-toggle="modal" data-bs-target="#chuacolink">
+						<img src="images/Floatbar/Float-Bar-Btn-GooglePlay.png" alt="" class=""/>
+					</a>
+				</li>
+				<li>
+					<a class="store" href="#"  data-bs-toggle="modal" data-bs-target="#chuacolink">
+						<img src="images/Floatbar/Float-Bar-Btn-APK.png" alt="" class=""/>
+					</a>
+				</li>
+				<!-- <li><img src="images/line.png" alt=""/></li>
+				<li>
+					<a class="nhapcode" href="#"  data-bs-toggle="modal" data-bs-target="#chuacolink">
+						<img src="images/btn-nhapcode.png" alt="" class=""/>
+					</a>
+				</li> -->
+			</ul>
+			<a class="icongame" href="#"  data-bs-toggle="modal" data-bs-target="#chuacolink">
+				<img src="images/Floatbar/Float-Bar-Icongame.png" alt="" class=""/>
+			</a>
+
+			<a class="joinforum" href="#"  data-bs-toggle="modal" data-bs-target="#chuacolink">
+				<img src="images/Floatbar/Float-Bar-Btn-Join.png" alt="" class=""/>
+			</a>
+		</div>
+		<!-- End Floatbar -->
     <!-- Swiper -->
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
@@ -348,17 +382,21 @@
             <!---bgvideo-->
             <div class="header-center">
               <a href="javascript:void(0)" class="header-logo mobi"><img class="mx-auto d-block" src="images/page1/Page-1-Logo.png" alt=""/></a>
-              <a href="javascript:void(0)" class="text-center d-block btnvideo" data-bs-toggle="modal" data-bs-target="#myModal">
+              <!-- <a href="javascript:void(0)" class="text-center d-block btnvideo" data-bs-toggle="modal" data-bs-target="#myModal">
                 <img class="mx-auto text-web pt-4" src="images/page1/Main-Text.png" alt=""/>
                 <img class="mx-auto text-mb pt-4" src="images/page1/Main-Text.png" alt=""/>
-              </a>
+              </a> -->
               <p class="lanchuot"><img src="images/page1/chuot.png" alt=""/></p>
               <!-- <a href="#" class="btn-trailer"  data-bs-toggle="modal" data-bs-target="#trailer"></a> -->
             </div>
             <div class="bgvideo">
               <video autoplay="" muted="" loop="" id="videoef" class="hideMb">
-                <source data-src="images/video_home_1.mp4" type="video/mp4" src="images/page1/Page-1-BG-Video.mp4">
+                <source data-src="images/video_home_1.mp4" type="video/mp4" src="images/page1/Video-2.mp4">
               </video>
+              <a href="javascript:void(0)" class="text-center d-block btnvideo" data-bs-toggle="modal" data-bs-target="#trailer">
+                <img class="mx-auto text-web pt-4" src="images/page1/Main-Text.png" alt=""/>
+                <img class="mx-auto text-mb pt-4" src="images/page1/Main-Text.png" alt=""/>
+              </a>
             </div>
             <!---Headercenter-->
 

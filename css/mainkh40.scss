@@ -73,6 +73,79 @@ html,body {position: relative;height: 100%;font-family: $fontfam, 'Roboto Conden
         }
     }
 }
+
+/*-Sticky-*/
+.floatbar{width: 168px;height:743px;background: url(../images/Floatbar/Float-Bar-BG.png) no-repeat top center;position: fixed;left: 0;top: 15%;z-index: 15;
+    ul{list-style: none;display: flex;justify-content: center;align-items: center;flex-direction: column;font-size: 12px;padding-left:0; padding-top: 111%;
+      li{padding:0.2rem 0;
+        a{display: flex;align-items: center;align-content:center;color: #fff;
+          &:hover{filter: brightness(120%);}
+        }
+        a.store{margin-bottom: 0px;
+          img{max-width: 100%;}
+          &:hover{filter: brightness(190%);}
+        }
+        a.nhapcode{margin-top: 0px;}
+  
+      }
+      // li:first-child{margin-bottom: -20px;}
+    }
+    .joinforum
+    {
+      position: relative;
+      top: 1%;
+      left: 6px;
+      &:hover{filter: brightness(160%);}
+    }
+  
+    .icongame
+    {
+      background: url(../images/Floatbar/Float-Bar-Icongame.png) no-repeat center top;
+      background-size: cover;
+      position: relative;
+      left: 11%;
+      &:hover{filter: brightness(120%);}
+    }
+}
+
+.modal-dksom{
+    .modal-content{background: url(../images/Floatbar/Float-Bar-Popup-BG.png) no-repeat top center;border:none;height:471px;width: 1200px;margin: 0 auto;position: relative;
+      .modal-body{padding:4rem 12rem;
+        .close{position: absolute;top:-10px;right:20px;width: 85px;height: 85px;background: url(../images/Floatbar/Float-Bar-Popup-Btn-Close.png) no-repeat top center;border: none;}
+        .content-dksom{text-align: center;
+          h4{font-size: 30px;color: #101a66;font-weight: 700;text-transform: uppercase;}
+          h6{color: #101a66;font-size: 22px;}
+          input{border:2px solid #101a66;color: #101a66;background: transparent;width:80%;margin: 0 auto;height: 61px;border-radius: 10px;}
+          p{font-size: 18px;line-height: 1.6;font-weight: 500;color: #101a66;}
+          table{font-size: 18px;line-height: 1.6;font-weight: 500;color: #101a66;}
+          .btn{margin: 0 auto;background:#101a66;color: white;font-weight: 700;font-size: 24px;margin-top:0.5rem;position: relative;
+            span.textsub{position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);color: white;text-shadow:1px 1px 2px #cc2717, 0px 0px 6px #81170d;text-transform: uppercase;}
+            }
+          .btn-dangky{background: transparent;border: none;transition: all 0.3s ease-in-out;
+            &:hover{filter: brightness(120%);}
+          }
+          
+        }
+      }
+    }
+}
+
+#trailer
+{
+    .modal-dialog{
+        .modal-content{background:url(../images/frame-popup.png) no-repeat top center;border:none;background-size:contain;
+          .btn-close{position: absolute;width: 54px;height: 54px;z-index: 100;right:12%;top:2rem;opacity: 1;
+            img{max-width: 100%;}
+            
+          }
+          .modal-body{padding:20px 100px;
+            img{max-width: 100%;margin: 0 auto;display: block;}
+            .close {position:absolute;right:92px;top:0;z-index:999;font-size:2rem;font-weight: normal;color:#ffd76c;opacity:1;border: none;background: transparent;}
+          }
+        }
+      }
+}
+
 /*=Header=*/
 .header 
 {
@@ -92,6 +165,38 @@ html,body {position: relative;height: 100%;font-family: $fontfam, 'Roboto Conden
             transform: translateX(-50%);
             height:100%;
         }
+
+        .btnvideo
+        {
+        display: block;
+        // width: 100%;
+        // height: auto;
+        position:absolute;
+        // bottom:calc(20px * var(--ratio) + var(--lanchuot));
+        // max-width:1100px;
+        // left: 66%;
+        // top: 61%;
+        // transform: translateX(-50%);
+        position: absolute;
+        top: 31vw;
+        right: 27vw;
+        z-index: 1111;
+
+            img
+            {
+                max-width: 100%;
+                margin: 0 auto;
+                object-fit:cover;
+                opacity: 0;
+                display: block;
+                height: 12vw;
+                width: 14vw;
+                padding: 0!important;
+            }
+
+            img.text-mb{display: none;}
+        }
+
     }
 
     .header-center
@@ -113,7 +218,7 @@ html,body {position: relative;height: 100%;font-family: $fontfam, 'Roboto Conden
         a.header-logo
         {
             display: block;
-            width: 100%;
+            width: fit-content;
             height: auto;
             position: absolute;
             left: 28%;
@@ -146,30 +251,30 @@ html,body {position: relative;height: 100%;font-family: $fontfam, 'Roboto Conden
             }
         }
 
-      .btnvideo
-      {
-        display: block;
-        // width: 100%;
-        height: auto;
-        position:absolute;
-        bottom:calc(20px * var(--ratio) + var(--lanchuot));
-        max-width:1100px;
-        left: 67%;
-        top: 66%;
-        transform: translateX(-50%);
+    //   .btnvideo
+    //   {
+    //     display: block;
+    //     // width: 100%;
+    //     height: auto;
+    //     position:absolute;
+    //     bottom:calc(20px * var(--ratio) + var(--lanchuot));
+    //     max-width:1100px;
+    //     left: 66%;
+    //     top: 61%;
+    //     transform: translateX(-50%);
 
-        img
-        {
-            max-width: 100%;
-            margin: 0 auto;
-            object-fit:cover;
-            opacity: 0;
-            display: block;
-            height: auto;
-        }
+    //     img
+    //     {
+    //         max-width: 100%;
+    //         margin: 0 auto;
+    //         object-fit:cover;
+    //         opacity: 0;
+    //         display: block;
+    //         height: 100%;
+    //     }
 
-        img.text-mb{display: none;}
-      }
+    //     img.text-mb{display: none;}
+    //   }
     }
 }
 
@@ -651,6 +756,21 @@ html,body {position: relative;height: 100%;font-family: $fontfam, 'Roboto Conden
 .style2::-webkit-scrollbar-thumb{border-radius: 10px;box-shadow: inset 0 0 6px rgba(0,0,0,.3);background-color: #e78f29;}
 
 
+@media (max-width: 1800px)
+{
+    .header .bgvideo .btnvideo{top: 34vw; right: 26vw;}
+}
+
+@media (max-width: 1700px)
+{
+    .header .bgvideo .btnvideo{top: 37vw; right: 24vw;}
+}
+
+
+@media (max-width: 1600px)
+{
+    .header .bgvideo .btnvideo{top: 40vw; right: 23vw;}
+}
 
 
 
@@ -721,11 +841,13 @@ html,body {position: relative;height: 100%;font-family: $fontfam, 'Roboto Conden
     a.header-logo{top:calc(50px * var(--ratio));}
     .page3 .tab-content .btn-videoex{display: block;}
     .download{display: block;}
-  .bgvideo{display: none !important;}
+//   .bgvideo{display: none !important;}
+    #videoef{display: none!important;}
   .header{background-size: 200% auto;background-image:url(../images/page1/Page-1-stillBG.jpg);}
-  .header .header-center .btnvideo img{opacity: 1;}
-  .header .header-center .btnvideo img.text-web{display: none;}
-  .header .header-center .btnvideo img.text-mb{display: block;position: relative; width: 80%;top: -251px;left: 55px;opacity: 0;}
+  .header .bgvideo .btnvideo img{opacity: 1;}
+  .header .bgvideo .btnvideo{top:62vw;right:24vw;}
+  .header .bgvideo .btnvideo .text-web{display: none!important;}
+  .header .bgvideo .btnvideo img.text-mb{display: block;position: relative; width: 80%;top: 0;left: 0;opacity: 0;}
   .modal-dk .modal-content .modal-body{padding: 0;}
   .modal-thele .modal-content .modal-body{padding: 2rem;
         .content-dksom{height: 470px;}

@@ -2,6 +2,8 @@
 #myModal .modal-body,.videochar .modal-body {position:relative;padding:0px;overflow: inherit;
 	.close {position:absolute;right:0px;top:-30px;z-index:999;font-size:2rem;font-weight: normal;color:#fff;opacity:1;border: none;background: transparent;}
 }
+
+
 .light{position:absolute;top:0;left:0;z-index:2;overflow:hidden;-webkit-filter:brightness(2);filter:brightness(2);-webkit-mask-size:300% 200%;mask-size:300% 200%;-webkit-mask-image:-webkit-linear-gradient(-60deg,rgba(255,255,255,0) 30%,#fff 50%,rgba(255,255,255,0) 60%);mask-image:-webkit-linear-gradient(-60deg,rgba(255,255,255,0) 40%,#fff 50%,rgba(255,255,255,0) 60%);-webkit-animation:laluot linear 2.5s infinite 1s;animation:laluot linear 2.5s infinite 1s;}
 .embed-responsive {
   position: relative;

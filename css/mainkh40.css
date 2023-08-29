@@ -331,6 +331,187 @@ html, body {
   filter: invert(1);
 }
 
+/*-Sticky-*/
+.floatbar {
+  width: 168px;
+  height: 743px;
+  background: url(../images/Floatbar/Float-Bar-BG.png) no-repeat top center;
+  position: fixed;
+  left: 0;
+  top: 15%;
+  z-index: 15;
+}
+.floatbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 12px;
+  padding-left: 0;
+  padding-top: 111%;
+}
+.floatbar ul li {
+  padding: 0.2rem 0;
+}
+.floatbar ul li a {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  color: #fff;
+}
+.floatbar ul li a:hover {
+  filter: brightness(120%);
+}
+.floatbar ul li a.store {
+  margin-bottom: 0px;
+}
+.floatbar ul li a.store img {
+  max-width: 100%;
+}
+.floatbar ul li a.store:hover {
+  filter: brightness(190%);
+}
+.floatbar ul li a.nhapcode {
+  margin-top: 0px;
+}
+.floatbar .joinforum {
+  position: relative;
+  top: 1%;
+  left: 6px;
+}
+.floatbar .joinforum:hover {
+  filter: brightness(160%);
+}
+.floatbar .icongame {
+  background: url(../images/Floatbar/Float-Bar-Icongame.png) no-repeat center top;
+  background-size: cover;
+  position: relative;
+  left: 11%;
+}
+.floatbar .icongame:hover {
+  filter: brightness(120%);
+}
+
+.modal-dksom .modal-content {
+  background: url(../images/Floatbar/Float-Bar-Popup-BG.png) no-repeat top center;
+  border: none;
+  height: 471px;
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+.modal-dksom .modal-content .modal-body {
+  padding: 4rem 12rem;
+}
+.modal-dksom .modal-content .modal-body .close {
+  position: absolute;
+  top: -10px;
+  right: 20px;
+  width: 85px;
+  height: 85px;
+  background: url(../images/Floatbar/Float-Bar-Popup-Btn-Close.png) no-repeat top center;
+  border: none;
+}
+.modal-dksom .modal-content .modal-body .content-dksom {
+  text-align: center;
+}
+.modal-dksom .modal-content .modal-body .content-dksom h4 {
+  font-size: 30px;
+  color: #101a66;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.modal-dksom .modal-content .modal-body .content-dksom h6 {
+  color: #101a66;
+  font-size: 22px;
+}
+.modal-dksom .modal-content .modal-body .content-dksom input {
+  border: 2px solid #101a66;
+  color: #101a66;
+  background: transparent;
+  width: 80%;
+  margin: 0 auto;
+  height: 61px;
+  border-radius: 10px;
+}
+.modal-dksom .modal-content .modal-body .content-dksom p {
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 500;
+  color: #101a66;
+}
+.modal-dksom .modal-content .modal-body .content-dksom table {
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 500;
+  color: #101a66;
+}
+.modal-dksom .modal-content .modal-body .content-dksom .btn {
+  margin: 0 auto;
+  background: #101a66;
+  color: white;
+  font-weight: 700;
+  font-size: 24px;
+  margin-top: 0.5rem;
+  position: relative;
+}
+.modal-dksom .modal-content .modal-body .content-dksom .btn span.textsub {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 1px 1px 2px #cc2717, 0px 0px 6px #81170d;
+  text-transform: uppercase;
+}
+.modal-dksom .modal-content .modal-body .content-dksom .btn-dangky {
+  background: transparent;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+.modal-dksom .modal-content .modal-body .content-dksom .btn-dangky:hover {
+  filter: brightness(120%);
+}
+
+#trailer .modal-dialog .modal-content {
+  background: url(../images/frame-popup.png) no-repeat top center;
+  border: none;
+  background-size: contain;
+}
+#trailer .modal-dialog .modal-content .btn-close {
+  position: absolute;
+  width: 54px;
+  height: 54px;
+  z-index: 100;
+  right: 12%;
+  top: 2rem;
+  opacity: 1;
+}
+#trailer .modal-dialog .modal-content .btn-close img {
+  max-width: 100%;
+}
+#trailer .modal-dialog .modal-content .modal-body {
+  padding: 20px 100px;
+}
+#trailer .modal-dialog .modal-content .modal-body img {
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+#trailer .modal-dialog .modal-content .modal-body .close {
+  position: absolute;
+  right: 92px;
+  top: 0;
+  z-index: 999;
+  font-size: 2rem;
+  font-weight: normal;
+  color: #ffd76c;
+  opacity: 1;
+  border: none;
+  background: transparent;
+}
+
 /*=Header=*/
 .header {
   position: relative;
@@ -344,6 +525,28 @@ html, body {
   left: 50%;
   transform: translateX(-50%);
   height: 100%;
+}
+.header .bgvideo .btnvideo {
+  display: block;
+  position: absolute;
+  position: absolute;
+  top: 31vw;
+  right: 27vw;
+  z-index: 1111;
+}
+.header .bgvideo .btnvideo img {
+  max-width: 100%;
+  margin: 0 auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0;
+  display: block;
+  height: 12vw;
+  width: 14vw;
+  padding: 0 !important;
+}
+.header .bgvideo .btnvideo img.text-mb {
+  display: none;
 }
 .header .header-center {
   z-index: 9;
@@ -359,7 +562,8 @@ html, body {
 }
 .header .header-center a.header-logo {
   display: block;
-  width: 100%;
+  width: -moz-fit-content;
+  width: fit-content;
   height: auto;
   position: absolute;
   left: 28%;
@@ -385,28 +589,6 @@ html, body {
   max-width: 100%;
   display: block;
   margin: 0 auto;
-}
-.header .header-center .btnvideo {
-  display: block;
-  height: auto;
-  position: absolute;
-  bottom: calc(20px * var(--ratio) + var(--lanchuot));
-  max-width: 1100px;
-  left: 67%;
-  top: 66%;
-  transform: translateX(-50%);
-}
-.header .header-center .btnvideo img {
-  max-width: 100%;
-  margin: 0 auto;
-  -o-object-fit: cover;
-     object-fit: cover;
-  opacity: 0;
-  display: block;
-  height: auto;
-}
-.header .header-center .btnvideo img.text-mb {
-  display: none;
 }
 
 .page2 {
@@ -927,6 +1109,24 @@ html, body {
   background-color: #e78f29;
 }
 
+@media (max-width: 1800px) {
+  .header .bgvideo .btnvideo {
+    top: 34vw;
+    right: 26vw;
+  }
+}
+@media (max-width: 1700px) {
+  .header .bgvideo .btnvideo {
+    top: 37vw;
+    right: 24vw;
+  }
+}
+@media (max-width: 1600px) {
+  .header .bgvideo .btnvideo {
+    top: 40vw;
+    right: 23vw;
+  }
+}
 @media (max-width: 1400px) {
   .page3 .tab-content .bgvideo, .page3 .tab-content .bgduoicung, .page3 .tab-content .bgtop {
     top: 170px;
@@ -1075,25 +1275,29 @@ html, body {
   .download {
     display: block;
   }
-  .bgvideo {
+  #videoef {
     display: none !important;
   }
   .header {
     background-size: 200% auto;
     background-image: url(../images/page1/Page-1-stillBG.jpg);
   }
-  .header .header-center .btnvideo img {
+  .header .bgvideo .btnvideo img {
     opacity: 1;
   }
-  .header .header-center .btnvideo img.text-web {
-    display: none;
+  .header .bgvideo .btnvideo {
+    top: 62vw;
+    right: 24vw;
   }
-  .header .header-center .btnvideo img.text-mb {
+  .header .bgvideo .btnvideo .text-web {
+    display: none !important;
+  }
+  .header .bgvideo .btnvideo img.text-mb {
     display: block;
     position: relative;
     width: 80%;
-    top: -251px;
-    left: 55px;
+    top: 0;
+    left: 0;
     opacity: 0;
   }
   .modal-dk .modal-content .modal-body {
