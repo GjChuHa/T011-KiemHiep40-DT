@@ -229,7 +229,8 @@ html,body {position: relative;height: 100%;font-family: $fontfam, 'Roboto Conden
             {
                 max-width: 100%;
                 margin: 0 auto;
-                object-fit:cover
+                object-fit:cover;
+                display: none!important;
             }
         }
 
@@ -852,6 +853,7 @@ html,body {position: relative;height: 100%;font-family: $fontfam, 'Roboto Conden
   .modal-thele .modal-content .modal-body{padding: 2rem;
         .content-dksom{height: 470px;}
     }
+    .header .header-center a.header-logo img{display: block !important;}
     .page2 .titlpage img,.page3 .titlpage img{opacity: 1;}
     .page3 .navclick{right: auto;left: 50%;transform: translateX(-50%);width: 100%;justify-content: center;bottom: 0;margin-bottom: 0 !important;}
     .page2 .bottomp2 a.dadk{background-size: contain;line-height: 56px;}
